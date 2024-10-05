@@ -37,12 +37,13 @@ I want the response in one single string having the structure \
 "Profile Summary" : ""}}
 '''
 #streamlit
-st.title("Smart ATS Checker 📄 ")
+st.set_page_config(page_title="🚀 ATS Resume Tracker")
+st.title("📄 ATS Resume Checker")
 st.header("Increase the chance to secure your dream job", divider="gray")
 jd=st.text_area("Paste Job desciption")
 
 #sidebar
-st.sidebar.title("Instructions")
+st.sidebar.markdown(" 📝 Instructions")
 st.sidebar.markdown("""
     **How to use:**
     1. Upload the PDF document using the upload button below.
